@@ -1,28 +1,41 @@
 # AI Automotive Market Intelligence Agent
 
-An end-to-end market intelligence pipeline that automatically collects, processes, classifies and analyses automotive news related to Chinese electric vehicle manufacturers. The project transforms raw news articles into actionable business insights through an interactive Streamlit dashboard.
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+An end-to-end market intelligence platform that automatically collects, processes, classifies and analyses automotive news related to Chinese electric vehicle manufacturers. The project transforms raw news articles into actionable business insights through an interactive Streamlit dashboard.
 
 ---
 
-## Project Overview
+# Project Overview
 
-This project demonstrates how data analytics, business intelligence and natural language processing can be combined to monitor developments within the automotive industry.
+This project demonstrates how Business Intelligence, Data Analytics and Natural Language Processing can be combined to monitor developments across the Chinese electric vehicle industry.
 
 The pipeline automatically:
 
-- Collects automotive news
-- Cleans and preprocesses text data
-- Classifies articles by company
-- Classifies articles by business topic
+- Collects automotive news from RSS feeds
+- Cleans and preprocesses article text
+- Detects mentioned automotive brands
+- Classifies articles into business topics
 - Performs sentiment analysis
-- Generates an executive market summary
-- Visualises insights in an interactive dashboard
+- Generates an executive market intelligence brief
+- Visualises insights through an interactive dashboard
 
-The primary focus is Chinese EV manufacturers and their competitive landscape.
+The primary focus is monitoring Chinese EV manufacturers and analysing their competitive landscape.
 
 ---
 
-## Focus Companies
+# Quick Start
+
+```bash
+git clone https://github.com/oliveraidev/AI-Automotive-Market-Intelligence-Agent.git
+cd AI-Automotive-Market-Intelligence-Agent
+pip install -r requirements.txt
+streamlit run src/dashboard/app.py
+```
+
+---
+
+# Focus Companies
 
 - BYD
 - Geely
@@ -35,9 +48,9 @@ The primary focus is Chinese EV manufacturers and their competitive landscape.
 
 ---
 
-# Pipeline
+# Architecture
 
-```
+```text
 RSS News Sources
         │
         ▼
@@ -59,7 +72,7 @@ Sentiment Analysis
 Executive Market Brief
         │
         ▼
-Interactive Dashboard
+Interactive Streamlit Dashboard
 ```
 
 ---
@@ -84,18 +97,18 @@ Users can filter articles by:
 - Brand
 - Topic
 - Sentiment
-- Search keyword
+- Keyword search
 
 ---
 
 ## KPI Dashboard
 
-Key business metrics include:
+Business metrics include:
 
-- Total articles
-- Number of companies
-- Number of topics
-- Top brand
+- Total articles analysed
+- Companies monitored
+- Topics identified
+- Top brand coverage
 - Positive sentiment share
 - Average sentiment score
 
@@ -105,16 +118,16 @@ Key business metrics include:
 
 Interactive charts include:
 
-- Articles by brand
-- Articles by topic
-- Overall sentiment distribution
-- Sentiment by brand
+- Articles by Brand
+- Articles by Topic
+- Overall Sentiment Distribution
+- Sentiment by Brand
 
 ---
 
 ## News Database
 
-Searchable article database including:
+Searchable article database containing:
 
 - Source
 - Title
@@ -122,13 +135,13 @@ Searchable article database including:
 - Topic
 - Sentiment
 - Publication date
-- Original article link
+- Original article URL
 
 ---
 
 # Topic Classification
 
-Articles are automatically classified into business topics including:
+Articles are automatically categorised into business topics including:
 
 - Battery & Energy
 - Charging Infrastructure
@@ -142,11 +155,14 @@ Articles are automatically classified into business topics including:
 - Trade, Tariffs & Regulation
 - Supply Chain
 - Safety & Recalls
-- Software & Connectivity
+- Software & AI
+- Pricing & Competition
+- Dealer & Retail Network
+- Technology & Innovation
 
 ---
 
-# Technologies Used
+# Technologies
 
 - Python
 - Pandas
@@ -161,14 +177,12 @@ Articles are automatically classified into business topics including:
 
 # Project Structure
 
-```
+```text
 AI-Automotive-Market-Intelligence-Agent/
 
-├── app/
 ├── data/
 │   ├── raw/
 │   └── processed/
-├── notebooks/
 ├── screenshots/
 ├── src/
 │   ├── collectors/
@@ -177,42 +191,47 @@ AI-Automotive-Market-Intelligence-Agent/
 │   ├── dashboard/
 │   └── utils/
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-# Example Workflow
+# Workflow
 
-1. Collect automotive news from RSS feeds
-2. Clean and preprocess articles
-3. Detect mentioned automotive brands
-4. Classify business topics
-5. Analyse article sentiment
-6. Generate market intelligence summary
-7. Display insights in the interactive dashboard
+1. Collect automotive news from RSS feeds.
+2. Clean and preprocess article data.
+3. Detect automotive brands.
+4. Classify business topics.
+5. Perform sentiment analysis.
+6. Generate an executive market intelligence brief.
+7. Display results in an interactive dashboard.
 
 ---
 
-# Example Dashboard
+# Dashboard
 
-*(Add dashboard screenshots here)*
+## Dashboard Overview
 
-### Dashboard Overview
+![Dashboard Overview](screenshots/dashboard_overview.png)
 
-![Dashboard](screenshots/dashboard_overview.png)
+---
 
-### Market Intelligence Brief
+## KPI Dashboard
 
-![Brief](screenshots/executive_brief.png)
+![KPI Dashboard](screenshots/dashboard_overview_2.png)
 
-### Sentiment Analysis
+---
 
-![Sentiment](screenshots/sentiment_analysis.png)
+## Sentiment Analysis
 
-### Article Database
+![Sentiment Analysis](screenshots/dashboard_sentiment.png)
 
-![Database](screenshots/article_database.png)
+---
+
+## Articles Database
+
+![Articles Database](screenshots/dashboard_articles.png)
 
 ---
 
@@ -220,26 +239,28 @@ AI-Automotive-Market-Intelligence-Agent/
 
 Potential future extensions include:
 
-- Machine learning-based topic classification
+- Transformer-based topic classification
 - Named Entity Recognition (NER)
-- Trend detection over time
-- Company comparison dashboards
-- Interactive geographic analysis
+- Trend analysis over time
+- Company benchmarking dashboards
+- Geographic market visualisations
 - Automated PDF reporting
-- LLM-powered market commentary
+- LLM-generated market commentary
+- Real-time news ingestion
 
 ---
 
 # Purpose
 
-This project was developed as part of a personal portfolio focused on Business Intelligence, Market Intelligence and Data Analytics within the automotive industry.
+This project was developed as part of my personal Business Intelligence, Market Intelligence and Data Analytics portfolio.
 
-The objective is to demonstrate practical skills in:
+It demonstrates practical experience with:
 
-- Data collection
-- Data preprocessing
-- Business intelligence
-- Natural language processing
-- Dashboard development
-- Data visualisation
-- Python programming
+- Data Collection
+- Data Cleaning
+- Natural Language Processing
+- Sentiment Analysis
+- Business Intelligence
+- Dashboard Development
+- Data Visualisation
+- Python Programming
