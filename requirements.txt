@@ -1,14 +1,8 @@
 streamlit
 pandas
-numpy
+plotly
+feedparser
+textblob
 requests
 beautifulsoup4
-feedparser
-openai
-langchain
-langchain-openai
-langchain-community
-chromadb
-python-dotenv
-plotly
 lxml
