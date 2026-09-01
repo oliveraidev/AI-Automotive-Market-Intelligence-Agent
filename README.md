@@ -219,7 +219,7 @@ AI-Automotive-Market-Intelligence-Agent/
 
 ## KPI Dashboard
 
-![KPI Dashboard](screenshots/dashboard_overview_2.png)
+![KPI Dashboard](screenshots/dashboard_kpis.png.png)
 
 ---
 
