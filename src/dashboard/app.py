@@ -1,10 +1,18 @@
+from pathlib import Path
+
 import pandas as pd
-import streamlit as st
 import plotly.express as px
+import streamlit as st
 
 from src.analysis.executive_summary import generate_summary
 
-DATA_PATH = "data/processed/enriched_automotive_news.csv"
+
+DATA_PATH = (
+    Path(__file__).resolve().parents[2]
+    / "data"
+    / "processed"
+    / "enriched_automotive_news.csv"
+)
 
 df = pd.read_csv(DATA_PATH)
 
