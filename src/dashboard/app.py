@@ -186,7 +186,7 @@ with left:
 
     st.plotly_chart(
         fig_brand,
-        use_container_width=True
+        width="stretch"
     )
 
 with right:
@@ -218,7 +218,7 @@ with right:
 
     st.plotly_chart(
         fig_topic,
-        use_container_width=True
+        width="stretch"
     )
 
 st.divider()
@@ -259,7 +259,7 @@ with sentiment_left:
 
     st.plotly_chart(
         fig_sentiment,
-        use_container_width=True
+        width="stretch"
     )
 
 with sentiment_right:
@@ -292,7 +292,7 @@ with sentiment_right:
 
     st.plotly_chart(
         fig_brand_sentiment,
-        use_container_width=True
+        width="stretch"
     )
 
 st.divider()
@@ -347,5 +347,5 @@ st.dataframe(
             "link",
         ]
     ],
-    use_container_width=True,
+    width="stretch",
 )
