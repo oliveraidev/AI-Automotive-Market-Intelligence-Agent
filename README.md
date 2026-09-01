@@ -29,8 +29,8 @@ The primary focus is monitoring Chinese EV manufacturers and analysing their com
 ```bash
 git clone https://github.com/oliveraidev/AI-Automotive-Market-Intelligence-Agent.git
 cd AI-Automotive-Market-Intelligence-Agent
-pip install -r requirements.txt
-streamlit run src/dashboard/app.py
+python3 -m pip install -r requirements.txt
+python3 -m streamlit run src/dashboard/app.py
 ```
 
 ---
